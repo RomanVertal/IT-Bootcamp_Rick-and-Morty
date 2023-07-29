@@ -2,11 +2,16 @@ import { createCharactersItem } from "../components/characters/character";
 
 const baseUrl = "https://rickandmortyapi.com/api/character";
 
-export const getCharacters = () => fetch(baseUrl).then((data) => data.json());
+export const getCharacters = (url = `${baseUrl}`) =>
+	fetch(url).then((data) => data.json());
 
-export const updateCharactersList = () =>
-	getCharacters().then((data) => {
+export let nextPage = "";
+
+export const updateCharactersList = (url) =>
+	getCharacters(url).then((data) => {
 		const characters = data.results;
+
+		nextPage = data.info.next;
 
 		const charactersElements = characters.map(createCharactersItem);
 

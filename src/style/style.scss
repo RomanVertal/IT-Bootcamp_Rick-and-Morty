@@ -73,3 +73,25 @@ body{
     
 
 }
+
+.show-more-container{
+    padding: 20px;
+    text-align: center;
+}
+
+.button-show-more{
+    background: #696969;
+    color: #ffffff;
+    border: 1px solid #696969;
+    border-radius: 7px;
+    padding: 10px 15px;
+    box-shadow: 0 0 7px #2e2e2e;
+    transition: 0.4s;
+    cursor: pointer;
+
+
+    &:hover{
+        background: #424242;        
+    }   
+
+}
