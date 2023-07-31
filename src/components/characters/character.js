@@ -1,6 +1,7 @@
 export const createCharactersItem = (character) => {
 	const characterItem = document.createElement("div");
 	characterItem.classList.add("characters-item");
+	characterItem.dataset.id = character.id;
 
 	const characterImg = document.createElement("div");
 	characterImg.classList.add("characters-item__img");

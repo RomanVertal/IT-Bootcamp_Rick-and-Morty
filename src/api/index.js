@@ -5,6 +5,9 @@ const baseUrl = "https://rickandmortyapi.com/api/character";
 export const getCharacters = (url = `${baseUrl}`) =>
 	fetch(url).then((data) => data.json());
 
+export const getSingleCharacter = (id) =>
+	fetch(`${baseUrl}/${id}`).then((data) => data.json());
+
 export let nextPage = "";
 
 export const updateCharactersList = (url) =>
