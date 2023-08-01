@@ -22,6 +22,22 @@
         grid-template-columns: 1fr 1fr;
     
     }
+    .modal-window{
+        flex-direction: column;
+        width: 300px;
+        height: inherit;
+        margin: 150px auto;
+    }
+
+    .modal-window__img{
+        img{
+            border-radius: 15px 15px 0 0 ;
+        }
+    }
+    .button-close{
+        color: #ffffff;
+        text-shadow: 0 0 5px #000000;
+    }
 
 }
 

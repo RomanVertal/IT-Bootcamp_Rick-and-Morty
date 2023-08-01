@@ -1,4 +1,5 @@
 import { createCharacters } from "./components/characters";
+import { createFooter } from "./components/footer";
 import { createHeader } from "./components/header";
 import { createMain, main } from "./components/main";
 import { createMoreCharactersButton } from "./components/moreCharactersButton";
@@ -14,7 +15,7 @@ const initApp = () => {
 	createNavbar(main);
 	createCharacters(main);
 	createMoreCharactersButton(main);
-
+	createFooter(wrapper);
 	document.body.append(wrapper);
 };
 

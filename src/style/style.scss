@@ -275,3 +275,17 @@ body{
 .hidden{
     display: none;
 }
+
+
+.footer{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    background-color: #999999;
+}
+
+.footer__title{
+    font-size: 20px;
+    font-weight: bold;
+}
