@@ -21,16 +21,18 @@ export const updateCharactersList = (url) =>
 		const buttonPrevPage = document.querySelector(".pagination__button-prev");
 		const buttonNextPage = document.querySelector(".pagination__button-next");
 
-		if (prevPage) {
-			buttonPrevPage.classList.remove("inactive-button");
-		} else {
-			buttonPrevPage.classList.add("inactive-button");
-		}
+		if (buttonPrevPage && buttonNextPage) {
+			if (prevPage) {
+				buttonPrevPage.classList.remove("inactive-button");
+			} else {
+				buttonPrevPage.classList.add("inactive-button");
+			}
 
-		if (nextPage) {
-			buttonNextPage.classList.remove("inactive-button");
-		} else {
-			buttonNextPage.classList.add("inactive-button");
+			if (nextPage) {
+				buttonNextPage.classList.remove("inactive-button");
+			} else {
+				buttonNextPage.classList.add("inactive-button");
+			}
 		}
 
 		const charactersElements = characters.map(createCharactersItem);

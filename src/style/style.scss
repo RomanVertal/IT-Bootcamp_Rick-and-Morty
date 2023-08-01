@@ -216,3 +216,62 @@ body{
     opacity: 0.5;
     pointer-events: none;
 }
+
+
+.navbar{
+    border-bottom: 1px solid #000000;
+
+}
+
+.toggle{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.toggle__title{
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 10px;
+
+}
+
+.toggle__label{
+    display: block;
+    position: relative;
+    width: 75px;
+    height: 35px;
+    background: #9c9c9c;
+    border-radius: 20px;    
+    cursor: pointer;
+    transition: 0.3s;  
+    box-shadow: 0 0 7px #2e2e2e;
+
+    
+    &::after{
+        content: "";
+        width: 25px;
+        height: 25px;
+        background: #dddddd;
+        border-radius: 50%;
+        position: absolute;
+        top: 5px;
+        left: 7px;
+        transition: 0.3s;
+    }
+
+}
+
+.toggle-active{
+    background: #ff5e00;
+    box-shadow: 0 0 7px #ffffff;
+    &::after{
+        background: #ffffff;
+        left: 43px;
+    }
+}
+
+.hidden{
+    display: none;
+}
