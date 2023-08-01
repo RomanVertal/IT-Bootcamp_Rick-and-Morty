@@ -1,3 +1,4 @@
+import { createButtonUp } from "./components/buttonUp";
 import { createCharacters } from "./components/characters";
 import { createFooter } from "./components/footer";
 import { createHeader } from "./components/header";
@@ -16,6 +17,8 @@ const initApp = () => {
 	createCharacters(main);
 	createMoreCharactersButton(main);
 	createFooter(wrapper);
+	createButtonUp(wrapper);
+
 	document.body.append(wrapper);
 };
 
